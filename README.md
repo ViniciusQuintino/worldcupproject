@@ -81,4 +81,33 @@ além de métricas agregadas de partidas e gols, oferecendo uma visão analític
 e exploratória do torneio ao longo do tempo.
 
 
+## 🛠️ Tecnologias Utilizadas
+
+As tecnologias foram escolhidas visando garantir qualidade na preparação dos
+dados, flexibilidade analítica e uma visualização clara e interativa dos
+resultados.
+
+- **Power BI**  
+  Utilizado para modelagem de dados, criação de medidas em DAX e desenvolvimento
+  da dashboard interativa.
+
+- **Python (Jupyter Notebook)**  
+  Responsável pela limpeza, filtragem e preparação dos dados antes da
+  importação para o Power BI.
+
+- **Visual Studio Code**  
+  Utilizado como ambiente de desenvolvimento para organização do código,
+  manipulação de scripts e versionamento do projeto.
+
+- **QGIS**  
+  Empregado no tratamento de dados geoespaciais e criação de mapas utilizados
+  nas visualizações da dashboard.
+
+## Conclusão
+
+Este projeto demonstra a aplicação de boas práticas em preparação de dados,
+modelagem analítica e visualização interativa, utilizando dados históricos da
+Copa do Mundo masculina. O resultado final é uma dashboard que permite explorar
+informações de forma clara, dinâmica e orientada à análise, apoiando a tomada
+de decisão e a construção de insights a partir dos dados.
 
