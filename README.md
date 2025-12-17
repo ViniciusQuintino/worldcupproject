@@ -34,8 +34,8 @@ maior coerência e consistência na análise desenvolvida.
 A limpeza e preparação dos dados foi realizada em Python, utilizando Pandas,
 com foco na padronização e filtragem dos registros.
 
-📎 O notebook completo com o processo de limpeza pode ser acessado em:
-worldcupproject/limpeza.ipynb
+📎 O notebook completo com o processo de limpeza pode ser acessado em: [worldcupproject/limpeza.ipynb](https://github.com/ViniciusQuintino/worldcupproject/blob/main/limpeza.ipynb)
+
 
 
 ### 🧠 Modelagem e Importação dos Dados
@@ -51,7 +51,8 @@ Dimensões como seleções, jogadores e torneios são compartilhadas entre as
 tabelas fato, permitindo análises consistentes em diferentes níveis de
 granularidade.
 
-<img width="1250" height="704" alt="image" src="https://github.com/user-attachments/assets/fd2519a8-f5a5-4533-b25f-ca8d986dddbf" />
+<img width="1429" height="803" alt="image" src="https://github.com/user-attachments/assets/9503ee01-40de-4455-be4f-1afcc6c232bb" />
+
 
 
 ### 🧮 Criação de Métricas e Medidas (DAX)
@@ -60,6 +61,9 @@ As métricas do projeto foram desenvolvidas utilizando DAX, seguindo boas práti
 de legibilidade, reutilização e separação de responsabilidades. As medidas
 abrangem indicadores de desempenho das seleções, estatísticas de partidas,
 análises históricas por Copa do Mundo e métricas individuais de jogadores.
+
+Para ter uma visão mais detalhada das medidas, acesse [worldcupproject
+/medidas.md](https://github.com/ViniciusQuintino/worldcupproject/blob/main/medidas.md)
 
 
 ### 📊 Desenvolvimento da Dashboard
@@ -71,7 +75,8 @@ estatísticas de jogadores e comparações entre edições do torneio.
 A solução foi pensada para permitir análises dinâmicas por seleção, Copa do
 Mundo, período e indicadores de desempenho.
 
-<img width="1422" height="798" alt="image" src="https://github.com/user-attachments/assets/2a54c7cf-93a1-49cb-b00e-84e19e29d261" />
+<img width="1424" height="803" alt="image" src="https://github.com/user-attachments/assets/400eb705-41e5-4574-a082-f6a1d1b3595c" />
+
 
 A dashboard apresenta uma visão consolidada da história das Copas do Mundo,
 permitindo análises dinâmicas por edição do torneio, período e seleção.
