@@ -63,25 +63,34 @@ análises históricas por Copa do Mundo e métricas individuais de jogadores.
 Para ter uma visão mais detalhada das medidas, acesse [worldcupproject
 /medidas.md](https://github.com/ViniciusQuintino/worldcupproject/blob/main/medidas.md)
 
-
 ### 📊 Desenvolvimento da Dashboard
 
 O projeto culmina no desenvolvimento de uma dashboard interativa no Power BI,
 permitindo a exploração histórica das Copas do Mundo, desempenho das seleções,
 estatísticas de jogadores e comparações entre edições do torneio.
 
-A solução foi pensada para permitir análises dinâmicas por seleção, Copa do
-Mundo, período e indicadores de desempenho.
+#### Tela 1 – Visão Geral do Torneio
+Esta tela apresenta um panorama histórico das Copas do Mundo, incluindo
+ranking de seleções por títulos, número de participações e evolução ao longo
+do tempo.
 
 <img width="1424" height="803" alt="image" src="https://github.com/user-attachments/assets/400eb705-41e5-4574-a082-f6a1d1b3595c" />
 
+#### Tela 2 – Análise por Seleção
+Aqui é possível explorar o desempenho de cada seleção em diferentes edições
+do torneio, incluindo confrontos contra demais seleções, última vez que 
+foi campeã, última vez que sediou uma copa e gols marcados.
 
-A dashboard apresenta uma visão consolidada da história das Copas do Mundo,
-permitindo análises dinâmicas por edição do torneio, período e seleção.
+<img width="1412" height="792" alt="image" src="https://github.com/user-attachments/assets/6f7204f1-a717-4798-8688-acf048d6515e" />
 
-O painel reúne indicadores históricos, rankings de títulos e participações,
-além de métricas agregadas de partidas e gols, oferecendo uma visão analítica
-e exploratória do torneio ao longo do tempo.
+#### Tela 3 – Estatísticas de Jogadores
+Esta tela detalha estatísticas individuais de jogadores, como premiações individuais,
+ranking dos maiores artilheiros e jogadores premiados na ultima edição de copa.
+
+<img width="1412" height="788" alt="image" src="https://github.com/user-attachments/assets/ba86f590-7065-4fdd-965f-000ddd76374c" />
+
+📎 O arquivo completo da dashboard pode ser acessado para download e exploração
+interativa: [worldcupproject.pbix](https://github.com/ViniciusQuintino/worldcupproject/blob/main/worldcupproject.pbix)
 
 
 ## 🛠️ Tecnologias Utilizadas
@@ -113,4 +122,5 @@ modelagem analítica e visualização interativa, utilizando dados históricos d
 Copa do Mundo masculina. O resultado final é uma dashboard que permite explorar
 informações de forma clara, dinâmica e orientada à análise, apoiando a tomada
 de decisão e a construção de insights a partir dos dados.
+
 
