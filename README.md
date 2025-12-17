@@ -21,13 +21,13 @@ Os dados utilizados foram obtidos a partir de bases públicas relacionadas às C
 ### 🧹 Limpeza e Tratamento dos Dados (Python)
 Na etapa inicial do projeto, foi realizada a limpeza e preparação dos dados.
 Como se trata de uma base de dados abrangente, contendo informações sobre
-Copas do Mundo masculinas e femininas, o primeiro passo consistiu em aplicar
-um filtro para manter exclusivamente os registros relacionados às Copas do
+Copas do Mundo masculinas e femininas, o primeiro passo foi aplicar
+um filtro para manter somente os registros relacionados às Copas do
 Mundo masculinas.
 
 Essa decisão foi tomada considerando que o escopo do projeto está alinhado
 à Copa do Mundo de 2026, que se refere a uma competição masculina, garantindo
-maior coerência e consistência na análise desenvolvida.
+maior coerência e consistência na análise.
 
 <img width="714" height="371" alt="image" src="https://github.com/user-attachments/assets/251b1470-619d-4a09-8ec8-3280ae247a63" />
 
@@ -44,33 +44,31 @@ um modelo estrela estendido (galaxy schema), no qual a tabela de partidas
 representa a principal tabela fato do projeto.
 
 As Copas do Mundo foram modeladas como dimensão, fornecendo o contexto histórico
-e temporal das análises, enquanto outras tabelas fato complementares registram
+e temporal das análises, enquanto outras tabelas fato registram
 eventos específicos, como gols, prêmios individuais e participação das seleções.
 
-Dimensões como seleções, jogadores e torneios são compartilhadas entre as
-tabelas fato, permitindo análises consistentes em diferentes níveis de
-granularidade.
+Dimensões como seleções, jogadores e torneios são usadas em várias tabelas fato, 
+permitindo analisar os dados de diferentes maneiras
 
 <img width="1386" height="785" alt="image" src="https://github.com/user-attachments/assets/ada7100a-8ef0-4bfd-a126-1c18b3c79ce5" />
 
-### 🧮 Criação de Métricas e Medidas (DAX)
+### 🧮 Criação de Medidas (DAX)
 
-As métricas do projeto foram desenvolvidas utilizando DAX, seguindo boas práticas
-de legibilidade, reutilização e separação de responsabilidades. As medidas
-abrangem indicadores de desempenho das seleções, estatísticas de partidas,
-análises históricas por Copa do Mundo e métricas individuais de jogadores.
+As medidas do projeto foram desenvolvidas utilizando DAX, seguindo boas práticas para que fiquem 
+fáceis de ler e reutilizar. Elas mostram desempenho das seleções, estatísticas das partidas, 
+análises históricas das Copas do Mundo e métricas individuais dos jogadores.
 
 Para ter uma visão mais detalhada das medidas, acesse [worldcupproject
 /medidas.md](https://github.com/ViniciusQuintino/worldcupproject/blob/main/medidas.md)
 
 ### 📊 Desenvolvimento da Dashboard
 
-O projeto culmina no desenvolvimento de uma dashboard interativa no Power BI,
+O projeto conclui no desenvolvimento de uma dashboard interativa,
 permitindo a exploração histórica das Copas do Mundo, desempenho das seleções,
 estatísticas de jogadores e comparações entre edições do torneio.
 
 #### Tela 1 – Visão Geral do Torneio
-Esta tela apresenta um panorama histórico das Copas do Mundo, incluindo
+Esta tela apresenta uma visão histórica das Copas do Mundo, incluindo
 ranking de seleções por títulos, número de participações e evolução ao longo
 do tempo.
 
