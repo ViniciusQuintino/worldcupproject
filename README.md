@@ -51,9 +51,7 @@ Dimensões como seleções, jogadores e torneios são compartilhadas entre as
 tabelas fato, permitindo análises consistentes em diferentes níveis de
 granularidade.
 
-<img width="1429" height="803" alt="image" src="https://github.com/user-attachments/assets/9503ee01-40de-4455-be4f-1afcc6c232bb" />
-
-
+<img width="1386" height="785" alt="image" src="https://github.com/user-attachments/assets/ada7100a-8ef0-4bfd-a126-1c18b3c79ce5" />
 
 ### 🧮 Criação de Métricas e Medidas (DAX)
 
