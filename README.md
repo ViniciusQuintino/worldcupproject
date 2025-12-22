@@ -110,8 +110,7 @@ resultados.
   manipulação de scripts e versionamento do projeto.
 
 - **QGIS**  
-  Empregado no tratamento de dados geoespaciais e criação de mapas utilizados
-  nas visualizações da dashboard.
+  Empregado na criação dos mapas utilizados nas visualizações da dashboard.
 
 ## Conclusão
 
