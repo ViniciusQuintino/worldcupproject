@@ -79,7 +79,7 @@ Aqui é possível explorar o desempenho de cada seleção em diferentes ediçõe
 do torneio, incluindo confrontos contra demais seleções, última vez que 
 foi campeã, última vez que sediou uma copa e gols marcados.
 
-<img width="1412" height="792" alt="image" src="https://github.com/user-attachments/assets/6f7204f1-a717-4798-8688-acf048d6515e" />
+<img width="888" height="498" alt="image" src="https://github.com/user-attachments/assets/7397f7fe-b3d1-44f8-9cba-896b8550f3c0" />
 
 #### Tela 3 – Estatísticas de Jogadores
 Esta tela detalha estatísticas individuais de jogadores, como premiações individuais,
