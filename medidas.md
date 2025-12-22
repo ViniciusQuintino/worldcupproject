@@ -11,7 +11,7 @@ com foco na lógica, contexto de filtro e impacto analítico.
 TOTAL_MATCHES =
 COUNTROWS ( fact_matches )
 ```
-Conta o total de partidas considerando o contexto de filtro aplicado
+Conta o total de partidas considerando os filtros aplicados
 (Copa do Mundo, seleção e período).
 
 ## Total de Gols (Medida Base)
@@ -21,8 +21,8 @@ TOTAL_GOALS =
 SUM ( fact_matches[home_team_score] )
     + SUM ( fact_matches[away_team_score] )
 ```
-Calcula o total de gols marcados nas partidas, somando os gols das equipes
-mandantes e visitantes, respeitando o contexto de filtro aplicado
+Calcula o total de gols marcados, somando os gols das equipes
+mandantes e visitantes, respeitando os filtros aplicados
 (Copa do Mundo, seleção e período).
 
 ## Títulos Acumulados por Seleção (Medida Avançada)
@@ -41,18 +41,17 @@ RETURN
     )
 ```
 Calcula o total de títulos conquistados por cada seleção de forma acumulada
-ao longo dos anos, considerando o país vencedor e o ano corrente no contexto
-de filtro aplicado.
+ao longo dos anos.
 
 A medida utiliza variáveis para capturar a seleção vencedora e o ano atual,
-permitindo avaliar a evolução histórica de títulos por seleção até cada edição
+permitindo avaliar a evolução histórica de títulos por seleção a cada edição
 da Copa do Mundo.
 
 **Lógica:**  
 - `SELECTEDVALUE` identifica a seleção vencedora no contexto atual  
-- O ano selecionado define o limite temporal da contagem  
+- O ano selecionado define o limite da contagem  
 - `CALCULATE` redefine o contexto de filtro para contar os títulos
-  acumulados até o ano corrente
+  acumulados até o ano selecionado
 
 ## Último Campeão (Medida Avançada)
 
@@ -80,16 +79,16 @@ RETURN
         Champion
     )
 ```
-Retorna o nome do campeão mais recente da Copa do Mundo considerando o contexto
-de filtros aplicados. Caso uma seleção esteja explicitamente selecionada,
-a medida retorna essa seleção; caso contrário, retorna o campeão da edição
-mais recente disponível no contexto atual.
+Retorna o nome do campeão mais recente da Copa do Mundo considerando os 
+filtros aplicados. Caso uma seleção esteja selecionada,
+a medida retorna essa seleção, caso contrário, retorna o campeão da edição
+mais recente disponível no período selecionado.
 
 **Lógica:**  
-- `SELECTEDVALUE` verifica se existe uma seleção vencedora no contexto  
+- `SELECTEDVALUE` verifica se existe uma seleção vencedora selecionada 
 - `ALLSELECTED` garante que o cálculo do último ano respeite filtros ativos
   na página (como período ou edições selecionadas)  
-- A medida aplica uma lógica condicional para exibir dinamicamente
+- A medida aplica uma lógica condicional para exibir
   o campeão conforme o contexto do relatório
 
   ## Gols por Jogador e Seleção (Medida Avançada)
@@ -111,12 +110,9 @@ RETURN
         fact_goals[team_name] = Team
     )
 ```
-Calcula o total de gols marcados por um jogador específico, considerando
-simultaneamente o nome do atleta e a seleção associada no contexto de filtro
+Calcula o total de gols marcados por um jogador, considerando
+o nome do atleta e a seleção selecionada no filtro
 aplicado.
-
-A medida permite análises individuais de desempenho, respeitando o contexto
-de seleção e evitando ambiguidades entre jogadores com nomes semelhantes.
 
 **Lógica:**  
 - O nome completo do jogador é construído dinamicamente a partir do contexto
