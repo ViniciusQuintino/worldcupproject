@@ -1,123 +1,123 @@
 # 📊 World Cup Project
 
 
-## 📌 Visão Geral
-Projeto de dashboard interativo com foco na análise histórica das Copas do Mundo,
-explorando desempenho das seleções, títulos, participações e estatísticas de jogadores.
+## 📌 Overview
+Interactive dashboard project focused on the historical analysis of the FIFA World Cup,
+exploring national team performance, titles, participations, and player statistics.
 
 
-## 🎯 Objetivo
-Apresentar uma visão analítica e histórica das Copas do Mundo, apoiando
-explorações temporais e comparações entre seleções e jogadores.
+## 🎯 Objective
+To present an analytical and historical view of the FIFA World Cups, supporting
+temporal exploration and comparisons between national teams and players.
 
 
-## 📂 Fonte dos Dados
-Os dados utilizados foram obtidos a partir de bases públicas relacionadas às Copas do Mundo.
+## 📂 Data Sources
+The data used in this project was obtained from public datasets related to the FIFA World Cup.
 
 
-## 🔄 Etapas do Projeto
+## 🔄 Project Stages
 
 
-### 🧹 Limpeza e Tratamento dos Dados (Python)
-Na etapa inicial do projeto, foi realizada a limpeza e preparação dos dados.
-Como se trata de uma base de dados abrangente, contendo informações sobre
-Copas do Mundo masculinas e femininas, o primeiro passo foi aplicar
-um filtro para manter somente os registros relacionados às Copas do
-Mundo masculinas.
+### 🧹 Data Cleaning and Preparation (Python)
+In the initial stage of the project, data cleaning and preparation were performed.
+Since the dataset is comprehensive and includes information about both men’s and women’s
+World Cups, the first step was to apply a filter to keep only records related to
+men’s FIFA World Cups.
 
-Essa decisão foi tomada considerando que o escopo do projeto está alinhado
-à Copa do Mundo de 2026, que se refere a uma competição masculina, garantindo
-maior coerência e consistência na análise.
-
-<img width="714" height="371" alt="image" src="https://github.com/user-attachments/assets/251b1470-619d-4a09-8ec8-3280ae247a63" />
-
-A limpeza e preparação dos dados foi realizada em Python, utilizando Pandas,
-com foco na padronização e filtragem dos registros.
-
-📎 O notebook completo com o processo de limpeza pode ser acessado em: [worldcupproject/limpeza.ipynb](https://github.com/ViniciusQuintino/worldcupproject/blob/main/limpeza.ipynb)
+This decision was made considering that the project scope is aligned with the
+2026 FIFA World Cup, which refers to a men’s competition, ensuring greater
+consistency and coherence in the analysis.
 
 
+<img width="810" height="306" alt="image" src="https://github.com/user-attachments/assets/07c44883-6bde-4d1f-865c-48a41cd5b918" />
 
-### 🧠 Modelagem e Importação dos Dados
-A modelagem de dados foi estruturada seguindo boas práticas de BI, utilizando
-um modelo estrela estendido (galaxy schema), no qual a tabela de partidas
-representa a principal tabela fato do projeto.
 
-As Copas do Mundo foram modeladas como dimensão, fornecendo o contexto histórico
-e temporal das análises, enquanto outras tabelas fato registram
-eventos específicos, como gols, prêmios individuais e participação das seleções.
+Data cleaning and preparation were performed using Python and Pandas,
+with a focus on standardization and filtering of records.
 
-Dimensões como seleções, jogadores e torneios são usadas em várias tabelas fato, 
-permitindo analisar os dados de diferentes maneiras
+📎 The complete notebook with the data cleaning process can be accessed at:  
+[worldcupproject/limpeza.ipynb](https://github.com/ViniciusQuintino/worldcupproject/blob/main/limpeza.ipynb)
+
+
+
+### 🧠 Data Modeling and Import
+The data model was structured following BI best practices, using an extended
+star schema (galaxy schema), where the matches table represents the main fact
+table of the project.
+
+World Cups were modeled as a dimension, providing historical and temporal
+context for the analyses, while other fact tables record specific events,
+such as goals, individual awards, and national team participation.
+
+Dimensions such as national teams, players, and tournaments are shared across
+multiple fact tables, enabling data analysis from different perspectives.
 
 <img width="1386" height="785" alt="image" src="https://github.com/user-attachments/assets/ada7100a-8ef0-4bfd-a126-1c18b3c79ce5" />
 
-### 🧮 Criação de Medidas (DAX)
 
-As medidas do projeto foram desenvolvidas utilizando DAX, seguindo boas práticas para que fiquem 
-fáceis de ler e reutilizar. Elas mostram desempenho das seleções, estatísticas das partidas, 
-análises históricas das Copas do Mundo e métricas individuais dos jogadores.
+### 🧮 Measures Creation (DAX)
+Project measures were developed using DAX, following best practices to ensure
+readability and reusability. They cover national team performance, match
+statistics, historical World Cup analyses, and individual player metrics.
 
-Para ter uma visão mais detalhada das medidas, acesse [worldcupproject
-/medidas.md](https://github.com/ViniciusQuintino/worldcupproject/blob/main/medidas.md)
+For a more detailed view of the measures, see:  
+[worldcupproject/medidas.md](https://github.com/ViniciusQuintino/worldcupproject/blob/main/medidas.md)
 
-### 📊 Desenvolvimento da Dashboard
 
-O projeto conclui no desenvolvimento de uma dashboard interativa,
-permitindo a exploração histórica das Copas do Mundo, desempenho das seleções,
-estatísticas de jogadores e comparações entre edições do torneio.
+### 📊 Dashboard Development
+The project concludes with the development of an interactive dashboard,
+allowing historical exploration of FIFA World Cups, national team performance,
+player statistics, and comparisons across tournament editions.
 
-#### Tela 1 – Visão Geral do Torneio
-Esta tela apresenta uma visão histórica das Copas do Mundo, incluindo
-ranking de seleções por títulos, número de participações e evolução ao longo
-do tempo.
+
+#### Screen 1 – Tournament Overview
+This screen presents a historical overview of the FIFA World Cups, including
+a ranking of national teams by titles, number of participations, and evolution
+over time.
 
 <img width="1424" height="803" alt="image" src="https://github.com/user-attachments/assets/400eb705-41e5-4574-a082-f6a1d1b3595c" />
 
-#### Tela 2 – Análise por Seleção
-Aqui é possível explorar o desempenho de cada seleção em diferentes edições
-do torneio, incluindo confrontos contra demais seleções, última vez que 
-foi campeã, última vez que sediou uma copa e gols marcados.
+
+#### Screen 2 – National Team Analysis
+This screen allows exploration of each national team’s performance across
+different tournament editions, including matchups against other teams,
+last time winning the World Cup, last time hosting a World Cup, and goals scored.
 
 <img width="1424" height="803" alt="image" src="https://github.com/user-attachments/assets/7397f7fe-b3d1-44f8-9cba-896b8550f3c0" />
 
-#### Tela 3 – Estatísticas de Jogadores
-Esta tela detalha estatísticas individuais de jogadores, como premiações individuais,
-ranking dos maiores artilheiros e jogadores premiados na ultima edição de copa.
+
+#### Screen 3 – Player Statistics
+This screen details individual player statistics, such as individual awards,
+top scorers ranking, and players awarded in the most recent World Cup edition.
 
 <img width="1412" height="788" alt="image" src="https://github.com/user-attachments/assets/ba86f590-7065-4fdd-965f-000ddd76374c" />
 
-📎 O arquivo completo da dashboard pode ser acessado para download e exploração
-interativa: [worldcupproject.pbix](https://github.com/ViniciusQuintino/worldcupproject/blob/main/worldcupproject.pbix)
+📎 The complete dashboard file is available for download and interactive exploration:  
+[worldcupproject.pbix](https://github.com/ViniciusQuintino/worldcupproject/blob/main/worldcupproject.pbix)
 
 
-## 🛠️ Tecnologias Utilizadas
-
-As tecnologias foram escolhidas visando garantir qualidade na preparação dos
-dados, flexibilidade analítica e uma visualização clara e interativa dos
-resultados.
+## 🛠️ Technologies Used
+The technologies were selected to ensure data quality during preparation,
+analytical flexibility, and clear, interactive visualizations.
 
 - **Power BI**  
-  Utilizado para modelagem de dados, criação de medidas em DAX e desenvolvimento
-  da dashboard interativa.
+  Used for data modeling, DAX measure creation, and interactive dashboard development.
 
 - **Python (Jupyter Notebook)**  
-  Responsável pela limpeza, filtragem e preparação dos dados antes da
-  importação para o Power BI.
+  Responsible for data cleaning, filtering, and preparation before importing
+  into Power BI.
 
 - **Visual Studio Code**  
-  Utilizado como ambiente de desenvolvimento para organização do código,
-  manipulação de scripts e versionamento do projeto.
+  Used as the development environment for code organization, script management,
+  and project version control.
 
 - **QGIS**  
-  Empregado na criação dos mapas utilizados nas visualizações da dashboard.
-
-## Conclusão
-
-Este projeto demonstra a aplicação de boas práticas em preparação de dados,
-modelagem analítica e visualização interativa, utilizando dados históricos da
-Copa do Mundo masculina. O resultado final é uma dashboard que permite explorar
-informações de forma clara, dinâmica e orientada à análise, apoiando a tomada
-de decisão e a construção de insights a partir dos dados.
+  Used to create the maps included in the dashboard visualizations.
 
 
+## Conclusion
+This project demonstrates the application of best practices in data preparation,
+analytical modeling, and interactive visualization using historical men’s FIFA
+World Cup data. The final result is a dashboard that enables clear, dynamic,
+and analysis-driven exploration of information, supporting decision-making and
+the generation of insights from data.
