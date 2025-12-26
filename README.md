@@ -36,7 +36,7 @@ Data cleaning and preparation were performed using Python and Pandas,
 with a focus on standardization and filtering of records.
 
 📎 The complete notebook with the data cleaning process can be accessed at:  
-[worldcupproject/limpeza.ipynb](https://github.com/ViniciusQuintino/worldcupproject/blob/main/limpeza.ipynb)
+[worldcupproject/data_cleaning.ipynb](https://github.com/ViniciusQuintino/worldcupproject/blob/main/data_cleaning.ipynb)
 
 
 
@@ -60,8 +60,8 @@ Project measures were developed using DAX, following best practices to ensure
 readability and reusability. They cover national team performance, match
 statistics, historical World Cup analyses, and individual player metrics.
 
-For a more detailed view of the measures, see:  
-[worldcupproject/medidas.md](https://github.com/ViniciusQuintino/worldcupproject/blob/main/medidas.md)
+📎 For a more detailed view of the measures, see:  
+[worldcupproject/measures.md](https://github.com/ViniciusQuintino/worldcupproject/blob/main/measures.md)
 
 
 ### 📊 Dashboard Development
